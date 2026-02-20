@@ -58,6 +58,7 @@ src/main/java/edu/eci/arsw/blueprints
 
 [Ver en PDF el Desarrollo de la parte I](./docs/Punto1.pdf)
 
+--- 
 
 ### 2. Migración a persistencia en PostgreSQL
 - Configura una base de datos PostgreSQL (puedes usar Docker).  
@@ -67,6 +68,8 @@ src/main/java/edu/eci/arsw/blueprints
 **Solución:**
 
 [Ver en PDF el Desarrollo de la parte II](./docs/Punto2.pdf)
+
+---
 
 ### 3. Buenas prácticas de API REST
 - Cambia el path base de los controladores a `/api/v1/blueprints`.  
@@ -89,18 +92,42 @@ src/main/java/edu/eci/arsw/blueprints
   }
   ```
 
+ **Solución:** 
+
 [Ver en PDF el Desarrollo de la parte III](./docs/Punto3.pdf)
+
+---
 
 ### 4. OpenAPI / Swagger
 - Configura `springdoc-openapi` en el proyecto.  
 - Expón documentación automática en `/swagger-ui.html`.  
 - Anota endpoints con `@Operation` y `@ApiResponse`.
 
+**Solución:**
+
+[Ver en PDF el Desarrollo de la parte IV](./docs/Punto4.pdf)
+
+---
+
+
 ### 5. Filtros de *Blueprints*
 - Implementa filtros:
   - **RedundancyFilter**: elimina puntos duplicados consecutivos.  
   - **UndersamplingFilter**: conserva 1 de cada 2 puntos.  
 - Activa los filtros mediante perfiles de Spring (`redundancy`, `undersampling`).  
+
+
+**Solución:**
+
+[Ver en PDF el Desarrollo de la parte V](./docs/Punto5.pdf)
+
+---
+
+# Pruebas Unitarias
+
+[Ver pruebas unitarias](./docs/PruebasUnitarias.pdf)
+
+
 
 ---
 
@@ -133,3 +160,7 @@ src/main/java/edu/eci/arsw/blueprints
 
 - Imagen de contenedor (`spring-boot:build-image`).  
 - Métricas con Actuator.  
+
+**RTA:**
+
+![Swagger UI](docs/image.png)
