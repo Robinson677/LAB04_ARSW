@@ -54,10 +54,19 @@ src/main/java/edu/eci/arsw/blueprints
 - Entiende la capa `persistence` con `InMemoryBlueprintPersistence`.  
 - Analiza la capa `services` (`BlueprintsServices`) y el controlador `BlueprintsAPIController`.
 
+**Solución:**
+
+[Ver en PDF el Desarrollo de la parte I](./docs/Punto1.pdf)
+
+
 ### 2. Migración a persistencia en PostgreSQL
 - Configura una base de datos PostgreSQL (puedes usar Docker).  
 - Implementa un nuevo repositorio `PostgresBlueprintPersistence` que reemplace la versión en memoria.  
 - Mantén el contrato de la interfaz `BlueprintPersistence`.  
+
+**Solución:**
+
+[Ver en PDF el Desarrollo de la parte II](./docs/Punto2.pdf)
 
 ### 3. Buenas prácticas de API REST
 - Cambia el path base de los controladores a `/api/v1/blueprints`.  
